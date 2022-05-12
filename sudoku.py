@@ -1,3 +1,8 @@
+# 
+# Written by Maggie Woodward 40456404
+# For SET09417 Coursework Spring 2022
+# 
+
 from pprint import pprint
 import random
 import curses

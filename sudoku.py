@@ -283,6 +283,13 @@ def playgame (window):
 					this_game[int(y/2)][int(x/2)] = int(chr(c))
 					print_game(window, this_game)
 					moves.append(this_game)
+					r, c = find_space(this_game)
+					if r == None:
+						window.addstr(24, 5, "Congratulations, you've solved it!")
+						window.clrtoeol()
+					else:
+						window.addstr(24, 5, " ")
+						window.clrtoeol()
 					window.move(y, x)
 				else: # error message if invalid
 					window.addstr(24, 5, "Invalid move")
